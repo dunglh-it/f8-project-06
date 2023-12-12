@@ -11,6 +11,7 @@ body {
     font-size: 1.6rem;
 }
 
+/* Common */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sora', sans-serif;
 }
@@ -18,4 +19,66 @@ h1, h2, h3, h4, h5, h6 {
 input, select, button, textarea {
     font-size: inherit;
     font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #000958;
+    border: 1px solid rgba(0, 9, 88, 0.7);
+    border-radius: 99px;
+    text-align: center;
+    transition: opacity 0.2s linear;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* Header */
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link,
+.header-action__link {
+    padding: 8px 18px;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5E6085;
+}
+
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__btn {
+    --height: 50px;
+    min-width: 117px;
 }
