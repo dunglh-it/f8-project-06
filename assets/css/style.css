@@ -791,3 +791,40 @@ a {
     color: #FF5B2E;
     border-color: currentColor;
 }
+
+/* Pricing */
+.pricing {
+    margin-top: 130px;
+    padding-top: 86px;
+    background-color: #FFF6ED;
+}
+
+.pricing__heading, .pricing__desc {
+    text-align: center;
+}
+
+.pricing__desc {
+    width: 709px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing__switch-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.pricing__switch-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    border-radius: 30px;
+}
+
+.pricing__
