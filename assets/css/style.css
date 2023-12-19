@@ -795,8 +795,12 @@ a {
 /* Pricing */
 .pricing {
     margin-top: 130px;
-    padding-top: 86px;
+    padding: 86px 0;
     background-color: #FFF6ED;
+}
+
+.pricing__container {
+    width: 994px;
 }
 
 .pricing__heading, .pricing__desc {
@@ -827,4 +831,121 @@ a {
     border-radius: 30px;
 }
 
-.pricing__
+.pricing__switch-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    background-color: #FF5B2E;
+    border-radius: inherit;
+}
+
+.pricing__switch-value {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+    left: auto;
+    right: 0;
+    width: 131px;
+}
+
+.pricing__switch-input:not(:checked) + .pricing__switch-label .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked + .pricing__switch-label .pricing__switch-value:nth-of-type(1) {
+    color: #FF5B2E;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing__switch--sale-off {
+    position: absolute;
+    top: -10px;
+    right: -112px;
+}
+
+.pricing__list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+}
+
+.pricing-item {
+    padding: 30px 28px 43px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.25s linear;
+    cursor: pointer;
+}
+
+.pricing-item:hover, .pricing-item__active {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.pricing-item:hover .pricing-item__btn, .pricing-item__active .pricing-item__btn {
+    background-color: #ff5b2e;
+    color: #fff;
+}
+
+.pricing-item__type {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #FF5B2E;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 600;
+    color: #3F4065;
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    line-height: 1.03;
+    font-weight: 700;
+    color: #000958;
+}
+
+.pricing-item__btn {
+    --height: 44px;
+
+    margin-top: 22px;
+    min-width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-color: rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.25s linear;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item {
+    margin-top: 18px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #656689;
+}
