@@ -1091,3 +1091,30 @@ a {
     width: 24px;
     background-color: #ff5b2e;
 }
+
+/* Blog */
+.blog {
+    margin-top: 130px;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 350px;
+    margin-right: 74px;
+}
+
+.blog__desc {
+    margin-top: 0;
+}
+
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    border-color: rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+}
